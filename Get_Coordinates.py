@@ -1,5 +1,13 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+@author: Xufan Xiong
+"""
+
 import googlemaps
 import pandas as pd
+import csv
+
 def geocode_address(loc):
     gmaps = googlemaps.Client(key='AIzaSyA8dqEARTsZKgc8mNTJk_VihauHHh9rfvk')
     geocode_result = gmaps.geocode(loc)
@@ -8,7 +16,7 @@ def geocode_address(loc):
     #test - print results
     return lat,lon
 
-import pandas as pd
+
 info = pd.read_csv('sandiego_adt.csv')
 poi_1 = info['Primary Street'] + ' & ' + info['1st Cross Street'] + ',San Diego,CA'
 poi_2 = info['Primary Street'] + ' & ' + info['2nd Cross Street'] + ',San Diego,CA'
@@ -25,8 +33,6 @@ for i in range(l):
 		p1.append((0,0))
 		p2.append((0,0))
 		print len(p1)
-
-import csv
 
 
 with open('file.csv','w') as f:
