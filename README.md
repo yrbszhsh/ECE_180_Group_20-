@@ -1,5 +1,4 @@
-ECE 180 Team 20 Project 
-San Diego Traffic Analysis
+ECE 180 Team 20 Project - San Diego Traffic Analysis
 
 Members: Eddie Tseng / Pin Tian / Sapan Patel / Yiyuan Xing / Xufan Xiong
 
