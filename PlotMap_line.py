@@ -1,3 +1,9 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+@author: Xufan Xiong
+"""
+
 import gmplot
 import pandas as pd
 import ast
